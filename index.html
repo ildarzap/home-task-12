@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shape&Color</title>
+  </head>
+  <body>
+    <h1>Shape&Color</h1>
+    <div class="container">
+      <div class="figure-container">
+        <div class="figure">
+          <div class="text"></div>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="control-group">
+          <label>Форма:</label>
+          <button id="circle-btn">Круг</button>
+          <button id="square-btn">Квадрат</button>
+          <button id="oval-btn">Овал</button>
+          <button id="rectangle-btn">Прямоугольник</button>
+        </div>
+        <div class="control-group">
+          <label>Цвет:</label>
+          <input type="color" />
+        </div>
+        <form class="control-group">
+          <div class="wrapper">
+            <label>Текст:</label>
+            <input type="text" />
+            <button>Добавить</button>
+          </div>
+          <div class="error"></div>
+        </form>
+        <div class="control-group">
+          <button id="clear-btn">Очистить</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+button {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.figure-container {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s ease-in-out;
+}
+
+.text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  overflow-wrap: break-word;
+}
+
+.circle {
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.square {
+  background-color: #000;
+  border-radius: 0;
+}
+
+.oval {
+  background-color: #000;
+  border-radius: 50%;
+  height: 200px;
+}
+
+.rectangle {
+  background-color: #000;
+  height: 200px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.control-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type='color'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form {
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
